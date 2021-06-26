@@ -1,0 +1,57 @@
+env:
+  browser: true
+  node: true
+  es2021: true
+extends:
+  - plugin:react/recommended
+  - plugin:prettier/recommended
+  - plugin:jsx-a11y/recommended
+  - plugin:react-hooks/recommended
+  - plugin:import/recommended
+  - plugin:@next/next/recommended
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: module
+plugins:
+  - react
+  - react-hooks
+  - jsx-a11y
+  - import
+rules:
+  prettier/prettier:
+    - error
+    - endOfLine: auto
+  react/react-in-jsx-scope: off
+  no-console: error
+  no-unused-vars: error
+  no-undef: error
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: error
+  import/no-unresolved: [2, { commonjs: true, amd: true }]
+  import/named: 2
+  import/namespace: 2
+  import/default: 2
+  import/export: 2
+  import/order:
+    - error
+    - groups:
+        - builtin
+        - external
+        - internal
+        - - parent
+          - sibling
+      pathGroups:
+        - pattern: react
+          group: external
+          position: before
+      pathGroupsExcludedImportTypes:
+        - react
+      newlines-between: always
+      alphabetize:
+        order: asc
+        caseInsensitive: true
+# ignorePatterns:
+# - "**/*.test.js"
+# - "**/vendor/*.js"
