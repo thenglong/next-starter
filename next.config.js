@@ -1,4 +1,4 @@
-const { default: basePath } = require("./basePath")
+const basePath = require("./basePath")
 
 module.exports = {
   reactStrictMode: true,
