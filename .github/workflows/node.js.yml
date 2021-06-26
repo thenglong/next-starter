@@ -33,12 +33,14 @@ jobs:
       #   run: yarn test
 
       - name: Build
-        run: yarn build
+        run: /
+          yarn build
+          echo ${repository}
         env:
           NEXT_PUBLIC_BASE_PATH: /next-starter
 
       - name: Export
-        run: yarn export && echo ${repository} && echo ${{repository}}
+        run: yarn export
         env:
           NEXT_PUBLIC_BASE_PATH: /next-starter
 
