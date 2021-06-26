@@ -39,13 +39,6 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /next-starter
 
-      - name: Build2
-        run: |
-          echo ${repository}
-          echo ${NEXT_PUBLIC_BASE_PATH}
-        env:
-          NEXT_PUBLIC_BASE_PATH: /next-starter
-
       - name: Export
         run: yarn export
         env:
