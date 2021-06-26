@@ -35,12 +35,12 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          NEXT_PUBLIC_BASE_PATH: /${repository}
+          NEXT_PUBLIC_BASE_PATH: /next-starter
 
       - name: Export
         run: yarn export
         env:
-          NEXT_PUBLIC_BASE_PATH: /${repository}
+          NEXT_PUBLIC_BASE_PATH: /next-starter
 
       - name: Create .nojekyll file
         run: touch ./out/.nojekyll
