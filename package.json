@@ -9,8 +9,6 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint --fix .",
-    "predeploy": "yarn build && yarn export",
-    "deploy": "gh-pages -d out",
     "prepare": "husky install"
   },
   "dependencies": {
