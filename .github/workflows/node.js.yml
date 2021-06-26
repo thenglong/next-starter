@@ -38,7 +38,7 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: /next-starter
 
       - name: Export
-        run: yarn export
+        run: yarn export && echo ${repository} && echo ${{repository}}
         env:
           NEXT_PUBLIC_BASE_PATH: /next-starter
 
