@@ -13,5 +13,5 @@ About.propTypes = {
 }
 
 export const getStaticProps = async () => {
-  return { props: { text: "About" } }
+  return { props: { text: "About Page" } }
 }
