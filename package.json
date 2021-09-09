@@ -13,6 +13,7 @@
     "pre-commit": "lint-staged"
   },
   "dependencies": {
+    "debug": "^4.3.2",
     "next": "11.0.1",
     "prop-types": "^15.7.2",
     "react": "17.0.2",
